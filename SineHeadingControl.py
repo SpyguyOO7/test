@@ -109,7 +109,7 @@ def main():
         #     error = math.pi* 2 + error# same thing but for other side
         #error = error % math.pi*2
         if error > math.pi: 
-            error = (error % math.pi)  * -1# trying to get there from the far side, so swap to the close size
+            error = (math.pi - (error % math.pi) ) * -1# trying to get there from the far side, so swap to the close size
         if error < -math.pi:
             error = error % math.pi 
             #error = math.pi* 2 + error# same thing but for other side
